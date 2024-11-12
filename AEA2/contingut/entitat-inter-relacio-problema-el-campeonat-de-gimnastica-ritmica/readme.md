@@ -51,7 +51,7 @@ El càlcul de les classificacions el farà després un programa que llegirà les
 dades guardades.
 
 <details>
-  <summary>Resolució MCD</summary>
+    <summary>Resolució MCD</summary>
 
     ![Resolució MCD](https://i.imgur.com/ZhoBtlw.png)
 
