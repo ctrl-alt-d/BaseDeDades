@@ -52,7 +52,7 @@ dades guardades.
 
 <details>
     <summary>Resolució MCD</summary>
-      <p>W
+      <p>
         <img src="https://i.imgur.com/ZhoBtlw.png" alt="Resolució MCD">
       </p>
 

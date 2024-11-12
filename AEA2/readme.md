@@ -25,6 +25,7 @@
       * [Entitat inter-relació - Exercicis dependència d'identificació II](./contingut/entitat-inter-relacio-exercicis-dependencia-didentificacio-ii/readme.md)
       * [Entitat inter-relació - Exercicis dependència d'identificació III](./contingut/entitat-inter-relacio-exercicis-dependencia-didentificacio-iii/readme.md)
 5. Exercicis
+   * [Aules informàtica](./contingut/entitat-inter-relacio-institut-informatica/readme.md)
    * [El campionat de gimnàstica rítmica](./contingut/entitat-inter-relacio-problema-el-campeonat-de-gimnastica-ritmica/readme.md)
 
 6. El model entitat-relació estès.
@@ -32,3 +33,4 @@
    * [Entitat inter-relació - Problema: La lligueta](./contingut/entitat-inter-relacio-problema-la-lligueta/readme.md)
    * [Entitat inter-relació - Problema: Piscines](./contingut/entitat-inter-relacio-problema-piscines/readme.md)
    * [Entitat inter-relació - Problema: La piulada](./contingut/entitat-inter-relacio-problema-la-piulada/readme.md)
+   * [Entitat inter-relació - Problema: El consorci sanitari](./contingut/entitat-inter-relacio-el-consorci-sanitari/readme.md)
