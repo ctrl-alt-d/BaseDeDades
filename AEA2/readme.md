@@ -24,7 +24,10 @@
       * [Entitat inter-relació - Exercicis dependència d'identificació](./contingut/entitat-inter-relacio-exercicis-dependencia-didentificacio/readme.md)
       * [Entitat inter-relació - Exercicis dependència d'identificació II](./contingut/entitat-inter-relacio-exercicis-dependencia-didentificacio-ii/readme.md)
       * [Entitat inter-relació - Exercicis dependència d'identificació III](./contingut/entitat-inter-relacio-exercicis-dependencia-didentificacio-iii/readme.md)
-5. El model entitat-relació estès.
+5. Exercicis
+   * [El campionat de gimnàstica rítmica](./entitat-inter-relacio-problema-el-campeonat-de-gimnastica-ritmica/readme.md)
+
+6. El model entitat-relació estès.
    * [Entitat inter-relació - Problema: L'Empresa que factura](./contingut/entitat-inter-relacio-problema-lempresa-que-factura/readme.md)
    * [Entitat inter-relació - Problema: La lligueta](./contingut/entitat-inter-relacio-problema-la-lligueta/readme.md)
    * [Entitat inter-relació - Problema: Piscines](./contingut/entitat-inter-relacio-problema-piscines/readme.md)
