@@ -11,13 +11,18 @@
 | AEA                         | Hores | Resultats d’aprenentatge |
 |-----------------------------|-------|--------------------------|
 | [AEA1 - Introducció a les BD](./AEA1)  | 8     | R1                       |
-| [AEA2 - El model entitat relació](./AEA2) | 20   | R1, R6                   |
-| AEA3 - El model relacional   | 20    | R1, R4                   |
-| AEA4 - DML                  | 35    | R3, R4, R6               |
-| AEA5 - DDL                  | 19    | R1, R2                   |
-| AEA6 - DCL i extensió procedimental | 20 | R1, R5                |
-| AEE7 - BD NoSQL             | 10    | R1, R7                   |
+| [AEA2 - El model entitat relació](./AEA2) | 20   | R6                   |
+| [AEA3 - El model relacional](./AEA3/)   | 20    | R6                   |
+| AEA5 - DDL                  | 19    | R2                   |
+| AEA4 - DML                  | 35    | R3, R4               |
+| AEA6 - DCL i extensió procedimental | 20 | R5                |
+| AEE7 - BD NoSQL             | 10    | R7                   |
 
+Nota:
+
+$$
+QM = 0.7 \cdot (0.1 \cdot RA_1 +  0.1 \cdot RA_2 + 0.1 \cdot RA_3 + 0.2 \cdot RA_4 + 0.3 \cdot RA_5 + 0.1 \cdot RA_6 + 0.1 \cdot RA_7) + 0.2 \cdot CC + 0.1 \cdot EE
+$$
 
 
 
