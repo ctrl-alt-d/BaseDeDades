@@ -1,6 +1,2 @@
-# El model Relacional
-
-## Conceptes
-
-* [Introducció](./contingut/introduccio.md)
+# DDL - Data Definition Language
 

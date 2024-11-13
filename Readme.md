@@ -11,8 +11,7 @@
 | AEA                         | Hores | Resultats d’aprenentatge |
 |-----------------------------|-------|--------------------------|
 | [AEA1 - Introducció a les BD](./AEA1)  | 8     | R1                       |
-| [AEA2 - El model entitat relació](./AEA2) | 20   | R6                   |
-| [AEA3 - El model relacional](./AEA3/)   | 20    | R6                   |
+| [AEA2 - El model entitat relació i el model relacional](./AEA2) | 40   | R6                   |
 | AEA5 - DDL                  | 19    | R2                   |
 | AEA4 - DML                  | 35    | R3, R4               |
 | AEA6 - DCL i extensió procedimental | 20 | R5                |
@@ -21,12 +20,12 @@
 Nota:
 
 $$
-QM = 0.7 \cdot (0.1 \cdot RA_1 +  0.1 \cdot RA_2 + 0.1 \cdot RA_3 + 0.2 \cdot RA_4 + 0.3 \cdot RA_5 + 0.1 \cdot RA_6 + 0.1 \cdot RA_7) + 0.2 \cdot CC + 0.1 \cdot EE
+QM = 0.7 \cdot (0.1 \cdot RA_1 +  0.2 \cdot RA_2 + 0.2 \cdot RA_3 + 0.3 \cdot RA_4 + 0.1 \cdot RA_5 + 0.1 \cdot RA_6) + 0.2 \cdot CC + 0.1 \cdot EE
 $$
 
 
 
-## Resuktats d'aprenentatge i criteris d'avaluació
+## Resultats d'aprenentatge i criteris d'avaluació
 
 1. Reconeix els elements de les bases de dades analitzant-ne les funcions i valorant la utilitat dels sistemes gestors.
    **Criteris d'avaluació**:
