@@ -14,9 +14,9 @@ Com que són pocs equips pensen que faran una liguilla. Jugaran tots contra tots
 
 No hi ha àrbitres ni tampoc cal emmagatzemar l'acta del partit.
 
-La base de dades contindrà doncs les temporades ( identificador i comentaris, ex: 2015-16, "8a temporada de la lliga inter-empreses" ), els jugadors (amb número whatsapp. Els jugadors seran els usuaris de la App, el número de telèfon whatsapp farà les funcions de username ), les empreses ( nom, adreça ), els equips ( de quina empresa són, jugador capità, nom equip ), espais per jugar ( nom, localització, dades de contacte per fer les reserves, anotacions com el preu, etc), els partits ( equip local i visitant que juntament amb la temporada fan d'atribut identificador principal, lloc on es disputarà, data i hora). Gols ( qui fa el gol, a quin partit, per a quin equip, en quin minut de partit. Es considera que no es poden fer dos gols en el mateix minut de partit.)
+La base de dades contindrà doncs les temporades ( identificador i comentaris, ex: 2015-16, "8a temporada de la lliga inter-empreses" ), els jugadors (amb número whatsapp. Els jugadors seran els usuaris de la App, el número de telèfon whatsapp farà les funcions de username ), les empreses ( nom, adreça ), els equips ( de quina empresa són, jugador capità actual, nom equip ), espais per jugar ( nom, localització, dades de contacte per fer les reserves, anotacions com el preu, etc), els partits ( equip local i visitant que juntament amb la temporada fan d'atribut identificador principal, lloc on es disputarà, data i hora). Gols ( qui fa el gol, a quin partit, per a quin equip, en quin minut de partit. Es considera que no es poden fer dos gols en el mateix minut de partit.)
 
-No cal cap històric de quins jugadors han jugat cada partit o a quines empreses han estat. Ens interessa la foto actual del sistema.
+No cal cap històric de quins jugadors han jugat cada partit o a quines empreses han estat. Ens interessa només la foto actual del sistema.
 
 L'app tindrà un sistema de missatgeria. S'enviaran missatges amb subject i contingut des de un usuari a altres usuaris ja sigui per anunciar partits, resultats o el que sigui. La data-hora del missatge forma part de l'AIP, representa que un mateix usuari no pot enviar dos missatges al mateix moment.
 
