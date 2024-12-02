@@ -35,6 +35,11 @@
    * [Entitat inter-relació - Problema: La piulada](./MER/entitat-inter-relacio-problema-la-piulada/readme.md)
    * [Entitat inter-relació - Problema: El consorci sanitari](./MER/entitat-inter-relacio-el-consorci-sanitari/readme.md)
 
+# MLD
+
+   * [Pas del M-E/R al MLD, 1a part](./MR/traduccio-del-model-entitat-relacio-al-model-relacional.md)
+   * [Pas del M-E/R al MLD, 2a part](./MR/traduccio-del-model-entitat-relacio-al-model-relacional-2.md)
+
 # El model relacional
 
 1. El concepte de model relacional
@@ -42,5 +47,3 @@
    * [El concepte de claus i tipus de claus](./MR/el-concepte-de-claus-i-tipus-de-claus.md)
    * [El valor null](./MR/el-valor-null.md)
    * [Regles d'integritat](./MR/regles-d-integritat.md)
-   * [Pas del M-E/R al MLD, 1a part](./MR/traduccio-del-model-entitat-relacio-al-model-relacional.md)
-   * [Pas del M-E/R al MLD, 2a part](./MR/traduccio-del-model-entitat-relacio-al-model-relacional-2.md)
