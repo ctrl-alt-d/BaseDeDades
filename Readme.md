@@ -20,7 +20,7 @@
 Nota:
 
 $$
-QM = 0.7 \cdot (0.1 \cdot RA_1 +  0.2 \cdot RA_2 + 0.2 \cdot RA_3 + 0.3 \cdot RA_4 + 0.1 \cdot RA_5 + 0.1 \cdot RA_6) + 0.2 \cdot CC + 0.1 \cdot EE
+QM = 0.7 \cdot (0.1 \cdot RA_1 +  0.1 \cdot RA_2 + 0.2 \cdot RA_3 + 0.1 \cdot RA_4 + 0.2 \cdot RA_5 + 0.2 \cdot RA_6 + 0.1 \cdot RA_7) + 0.2 \cdot CC + 0.1 \cdot EE
 $$
 
 
