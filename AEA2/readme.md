@@ -47,3 +47,7 @@
    * [El valor null](./MR/el-valor-null.md)
    * [Regles d'integritat](./MR/regles-d-integritat.md)
    * [Classes tipus i subtipus i el seu pas a relacional](./MR/traduccio-del-model-entitat-relacio-al-model-relacional-ii.md)
+
+2. Les formes normals
+   * [Introducció i FN 1,2 i 3](./MR/formes-normals.md)
+   * [FN 4, 5 i BC](./MR/formes-normals-ii.md)
