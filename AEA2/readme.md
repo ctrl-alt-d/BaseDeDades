@@ -38,7 +38,6 @@
 # MLD
 
    * [Pas del M-E/R al MLD, 1a part](./MR/traduccio-del-model-entitat-relacio-al-model-relacional.md)
-   * [Pas del M-E/R al MLD, 2a part](./MR/traduccio-del-model-entitat-relacio-al-model-relacional-ii.md)
 
 # El model relacional
 
@@ -47,3 +46,4 @@
    * [El concepte de claus i tipus de claus](./MR/el-concepte-de-claus-i-tipus-de-claus.md)
    * [El valor null](./MR/el-valor-null.md)
    * [Regles d'integritat](./MR/regles-d-integritat.md)
+   * [Classes tipus i subtipus i el seu pas a relacional](./MR/traduccio-del-model-entitat-relacio-al-model-relacional-ii.md)
