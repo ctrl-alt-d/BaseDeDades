@@ -37,7 +37,7 @@
 
 # MLD
 
-   * [Pas del M-E/R al MLD, 1a part](./MR/traduccio-del-model-entitat-relacio-al-model-relacional.md)
+   * [Pas del M-E/R al MLD](./MR/traduccio-del-model-entitat-relacio-al-model-relacional.md)
 
 # El model relacional
 
