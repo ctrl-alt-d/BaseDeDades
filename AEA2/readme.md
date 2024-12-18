@@ -49,5 +49,9 @@
    * [Classes tipus i subtipus i el seu pas a relacional](./MR/traduccio-del-model-entitat-relacio-al-model-relacional-ii.md)
 
 2. Les formes normals
-   * [Introducció i FN 1,2 i 3](./MR/formes-normals.md)
+   * [Introducció](./MR/formes-normals.md)
+   * [Dependències funcional](./MR/formes-normals-dependencia-funcional.md)
+   * [Primera forma normal](./MR/formes-normals-i.md)
+   * [Segona forma normal](./MR/formes-normals-ii.md)
+   * [Tercera forma normal](./MR/formes-normals-iii.md)
    * [FN 4, 5 i BC](./MR/formes-normals-ii.md)
