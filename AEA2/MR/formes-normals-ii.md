@@ -60,7 +60,7 @@ Relacions després de la normalització:
 
 ### **1. Normalitza aquesta taula:**
 
-Relació inicial:  
+Relació inicial:  Suposem una taula que ens informa de la puntuació màxima de cada jugador per cada dia. Ex, Zoom el dia 1.9.2016 la seva puntuació màxima va ser 24K. I també ens informa de la nacionalitat del jugador. Ex, Zoom és Català.
 
 | _Jugador | Country   | _Dia     | MàximaPuntuació |
 |-------------|-----------|-------------|-----------------|
