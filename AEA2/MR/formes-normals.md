@@ -37,7 +37,7 @@ Les 3 primeres formes normals garanteixen una organització eficient de les dade
 
 Un professor emmagatzema informació dels seus alumnes en una taula Excel de la següent manera:
 
-| **Alumne** | Població  | **Avaluació** | Nota |
+| _Alumne | Població  | _Avaluació | Nota |
 |--------|-----------|-----------|------|
 | Pere   | Roses     | 1         | 8    |
 | Pere   | Roses     | 2         | 7    |
@@ -63,14 +63,14 @@ Un professor emmagatzema informació dels seus alumnes en una taula Excel de la 
 
    - **Taula 'Alumnes':**
 
-     | **Alumne** | Població  |
+     | _Alumne | Població  |
      |--------|-----------|
      | Pere   | Roses     |
      | Marta  | Figueres  |
 
    - **Taula 'Notes':**
 
-     | **Alumne** | **Avaluació** | Nota |
+     | _Alumne | _Avaluació | Nota |
      |--------|-----------|------|
      | Pere   | 1         | 8    |
      | Pere   | 2         | 7    |

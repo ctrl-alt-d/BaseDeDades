@@ -28,7 +28,7 @@ Cal **despivotar** (transformar) les dades que no estan en primera forma normal.
 
 Abans de la normalització:  
 
-| **Nom**   | Telf1 | Telf2 | Telf3 |
+| _Nom   | Telf1 | Telf2 | Telf3 |
 |-------|-------|-------|-------|
 | Pere  | 12    | 42    | -     |
 | Marta | 15    | -     | -     |
@@ -36,7 +36,7 @@ Abans de la normalització:
 
 Després de la normalització:  
 
-| **Nom**   | **Telf** |
+| _Nom   | _Telf |
 |-------|------|
 | Pere  | 12   |
 | Pere  | 42   |
