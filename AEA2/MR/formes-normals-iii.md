@@ -29,7 +29,7 @@ Quan un atribut depèn d'un altre atribut o conjunt d'atributs que **no formen p
 
 Relació inicial:  
 
-| __Alumne__ | Població     | Comarca      |
+| &Alumne& | Població     | Comarca      |
 |------------|-------------|--------------|
 | Pere       | Roses       | Alt Empordà  |
 | Marta      | Olot        | La Garrotxa  |
@@ -41,14 +41,14 @@ Relació inicial:
 
 **Taula 1: Alumnes (3FN):**  
 
-| __Alumne__ | Població     |
+| &Alumne& | Població     |
 |------------|-------------|
 | Pere       | Roses       |
 | Marta      | Olot        |
 
 **Taula 2: Poblacions (3FN):**  
 
-| __Població__ | Comarca      |
+| &Població& | Comarca      |
 |--------------|--------------|
 | Roses        | Alt Empordà  |
 | Olot         | La Garrotxa  |
@@ -61,7 +61,7 @@ Relació inicial:
 
 Relació inicial:  
 
-| __Jugador__ | Country       | __Dia__     | MàximaPuntuació | Continent |
+| &Jugador& | Country       | &Dia&     | MàximaPuntuació | Continent |
 |-------------|---------------|-------------|-----------------|-----------|
 | Zoom        | Cat           | 1/9/2016    | 24K            | Europe    |
 | Zoom        | Cat           | 2/9/2016    | 23K            | Europe    |
@@ -81,7 +81,7 @@ Relació inicial:
 
 **Taula 1: JugadorDia (3FN):**  
 
-| __Jugador__ | __Dia__     | MàximaPuntuació |
+| &Jugador& | &Dia&     | MàximaPuntuació |
 |-------------|-------------|-----------------|
 | Zoom        | 1/9/2016    | 24K            |
 | Zoom        | 2/9/2016    | 23K            |
@@ -92,7 +92,7 @@ Relació inicial:
 
 **Taula 2: Countries (3FN):**  
 
-| __Country__      | Continent |
+| &Country&      | Continent |
 |------------------|-----------|
 | Cat              | Europe    |
 | Italy            | Europe    |
