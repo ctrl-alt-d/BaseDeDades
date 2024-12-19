@@ -54,4 +54,5 @@
    * [Primera forma normal](./MR/formes-normals-i.md)
    * [Segona forma normal](./MR/formes-normals-ii.md)
    * [Tercera forma normal](./MR/formes-normals-iii.md)
+   * [Exercicis normalització](./MR/exercicis-normalitzacio.md)
    * [FN 4, 5 i BC](./MR/formes-normals-ii.md)
