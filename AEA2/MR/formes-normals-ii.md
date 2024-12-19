@@ -19,11 +19,10 @@ Perquè una relació estigui en **segona forma normal (2FN)**:
 
 Relació inicial:  
 
-| **Alumne** | Població  | **Avaluació** | Nota |
+| _Alumne | Població  | _Avaluació | Nota |
 |------------|-----------|---------------|------|
 | Pere       | Roses     | 1             | 8    |
 | Pere       | Roses     | 2             | 7    |
-| Pere       | Roses     | 1             | 5    |
 | Marta      | Olot      | 1             | 8    |
 
 - **Clau primària:** Alumne + Avaluació.  
@@ -64,7 +63,7 @@ Relacions després de la normalització:
 
 Relació inicial:  
 
-| **Jugador** | Country   | **Dia**     | MàximaPuntuació |
+| _Jugador | Country   | _Dia     | MàximaPuntuació |
 |-------------|-----------|-------------|-----------------|
 | Zoom        | Cat       | 1/9/2016    | 24K            |
 | Zoom        | Cat       | 2/9/2016    | 23K            |
@@ -106,7 +105,7 @@ Relació inicial:
 
 Relació inicial:  
 
-| **Jugador** | Country   | **Dia**     | MàximaPuntuació |
+| _Jugador | Country   | _Dia     | MàximaPuntuació |
 |-------------|-----------|-------------|-----------------|
 | Zoom        | Cat       | 1/9/2016    | 24K            |
 | Zoom        | Cat       | 2/9/2016    | 23K            |
