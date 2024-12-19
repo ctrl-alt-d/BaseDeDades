@@ -29,7 +29,7 @@ Quan un atribut depèn d'un altre atribut o conjunt d'atributs que **no formen p
 
 Relació inicial:  
 
-| **Alumne** | Població     | Comarca      |
+| *Alumne* | Població     | Comarca      |
 |------------|-------------|--------------|
 | Pere       | Roses       | Alt Empordà  |
 | Marta      | Olot        | La Garrotxa  |
