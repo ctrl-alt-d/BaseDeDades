@@ -67,14 +67,41 @@ Relació inicial:
 | Zoom        | Cat           | 2/9/2016    | 23K            | Europe    |
 | Creep       | Italy         | 1/9/2016    | 45K            | Europe    |
 | Creep       | Italy         | 2/9/2016    | 13K            | Europe    |
-| Nation      | Algery        | 2/9/2016    | 78K            | Europe    |
+| Nation      | Algery        | 2/9/2016    | 78K            | Africa    |
 | Smoker      | Saudi Arabia  | 2/9/2016    | 67K            | Asia      |
 
 #### Solució:
 
-1. **Comprova si està en 3FN:**  
+1. **Comprova si està en 2FN:**  
    - Clau primària: **Jugador** + **Dia**.  
-   - Problema: L'atribut *Continent* depèn transitivament de la clau primària, ja que depèn de *Country*.  
+   - Problema: No està en 2a FN perquè hi ha atributs que no depenen de tota la clau primària. L'atribut *Country* només depen de *Jugador*
+
+Passem a 2FN:
+
+**Taula 1: JugadorDia (2FN):**  
+
+| _Jugador | _Dia     | MàximaPuntuació |
+|-------------|-------------|-----------------|
+| Zoom        | 1/9/2016    | 24K            |
+| Zoom        | 2/9/2016    | 23K            |
+| Creep       | 1/9/2016    | 45K            |
+| Creep       | 2/9/2016    | 13K            |
+| Nation      | 2/9/2016    | 78K            |
+| Smoker      | 2/9/2016    | 67K            |
+
+**Taula 2: Jugadors (2FN):**  
+
+|_Jugador| Country      | Continent |
+|-|------------------|-----------|
+|Zoom| Cat              | Europe    |
+|Creep| Italy            | Europe    |
+|Nation| Algery           | Africa    |
+|Smoker| Saudi Arabia     | Asia      |
+
+
+1. **Comprova si està en 3FN:**  
+   - Clau primària: **Jugador**.  
+   - Problema: L'atribut *Continent* depèn transitivament de la clau primària, ja que depèn transitivament de *Country*.  
 
 2. **Pas a 3FN:**  
    - Mou l'atribut *Continent* a una nova taula juntament amb *Country*.
@@ -90,13 +117,23 @@ Relació inicial:
 | Nation      | 2/9/2016    | 78K            |
 | Smoker      | 2/9/2016    | 67K            |
 
-**Taula 2: Countries (3FN):**  
+**Taula 2: Jugadors (2FN):**  
+
+|_Jugador| Country      |
+|-|------------------|
+|Zoom| Cat              |
+|Creep| Italy            |
+|Nation| Algery           |
+|Smoker| Saudi Arabia     |
+
+
+**Taula 3: Countries (3FN):**  
 
 | _Country      | Continent |
 |------------------|-----------|
 | Cat              | Europe    |
 | Italy            | Europe    |
-| Algery           | Europe    |
+| Algery           | Africa    |
 | Saudi Arabia     | Asia      |
 
 ---
