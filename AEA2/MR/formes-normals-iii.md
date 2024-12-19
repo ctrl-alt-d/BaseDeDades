@@ -72,69 +72,73 @@ Relació inicial:
 
 #### Solució:
 
-1. **Comprova si està en 2FN:**  
-   - Clau primària: **Jugador** + **Dia**.  
-   - Problema: No està en 2a FN perquè hi ha atributs que no depenen de tota la clau primària. L'atribut *Country* només depen de *Jugador*
+1. **Comprovar si està en 1FN:**
+   - Sí,està en primer forma normal perquè està lliure de grups repetitius (no hi ha atributs multivaluats ni grups repetitius)
 
-Passem a 2FN:
+2. **Comprova si està en 2FN:**  
+   - Per tal que estigui en 2FN els atributs que no formen part de la clau primària han de dependre funcionalment de **tots** els atributs de la clau primària.
+   - No està en 2a FN perquè hi ha atributs que no depenen de tota la clau primària. L'atribut *Country* només depen de *Jugador*
 
-**Taula 1: JugadorDia (2FN):**  
+3. **Pas a 2FN:**
+   - Passem a una nova taula els atributs que no depenen funcionalment de tota la clau primària amb una còpia del seu determinant. En aquest cas, movem **Country** i **Continent** a una nova taula amb una còpia del seu determinant, **Jugador**, que serà la clau primària a la nova taula.
 
-| _Jugador | _Dia     | MàximaPuntuació |
-|-------------|-------------|-----------------|
-| Zoom        | 1/9/2016    | 24K            |
-| Zoom        | 2/9/2016    | 23K            |
-| Creep       | 1/9/2016    | 45K            |
-| Creep       | 2/9/2016    | 13K            |
-| Nation      | 2/9/2016    | 78K            |
-| Smoker      | 2/9/2016    | 67K            |
+   **Taula 1: JugadorDia (2FN):**  
 
-**Taula 2: Jugadors (2FN):**  
+   | _Jugador | _Dia     | MàximaPuntuació |
+   |-------------|-------------|-----------------|
+   | Zoom        | 1/9/2016    | 24K            |
+   | Zoom        | 2/9/2016    | 23K            |
+   | Creep       | 1/9/2016    | 45K            |
+   | Creep       | 2/9/2016    | 13K            |
+   | Nation      | 2/9/2016    | 78K            |
+   | Smoker      | 2/9/2016    | 67K            |
 
-|_Jugador| Country      | Continent |
-|-|------------------|-----------|
-|Zoom| Cat              | Europe    |
-|Creep| Italy            | Europe    |
-|Nation| Algery           | Africa    |
-|Smoker| Saudi Arabia     | Asia      |
+   **Taula 2: Jugadors (2FN):**  
 
-
-1. **Comprova si està en 3FN:**  
-   - Clau primària: **Jugador**.  
-   - Problema: L'atribut *Continent* depèn transitivament de la clau primària, ja que depèn transitivament de *Country*.  
-
-2. **Pas a 3FN:**  
-   - Mou l'atribut *Continent* a una nova taula juntament amb *Country*.
-
-**Taula 1: JugadorDia (3FN):**  
-
-| _Jugador | _Dia     | MàximaPuntuació |
-|-------------|-------------|-----------------|
-| Zoom        | 1/9/2016    | 24K            |
-| Zoom        | 2/9/2016    | 23K            |
-| Creep       | 1/9/2016    | 45K            |
-| Creep       | 2/9/2016    | 13K            |
-| Nation      | 2/9/2016    | 78K            |
-| Smoker      | 2/9/2016    | 67K            |
-
-**Taula 2: Jugadors (2FN):**  
-
-|_Jugador| Country      |
-|-|------------------|
-|Zoom| Cat              |
-|Creep| Italy            |
-|Nation| Algery           |
-|Smoker| Saudi Arabia     |
+   |_Jugador| Country      | Continent |
+   |-|------------------|-----------|
+   |Zoom| Cat              | Europe    |
+   |Creep| Italy            | Europe    |
+   |Nation| Algery           | Africa    |
+   |Smoker| Saudi Arabia     | Asia      |
 
 
-**Taula 3: Countries (3FN):**  
+4. **Comprova si està en 3FN:**  
+   - Per tal d'estar en 3FN no poden haver atributs que no formin part de la clau primària i que depenguin transitivament d'altres atributs que no formen part de la clau primària.
+   - L'atribut *Continent* depèn transitivament de la clau primària, ja que depèn de *Country* que és un atribut que no forma part de la clau primàtia.  
 
-| _Country      | Continent |
-|------------------|-----------|
-| Cat              | Europe    |
-| Italy            | Europe    |
-| Algery           | Africa    |
-| Saudi Arabia     | Asia      |
+5. **Pas a 3FN:**  
+   - Mou l'atribut *Continent* a una nova taula juntament amb *Country*. *Country**, que és el seu determinant, serà clau primària a la nova taula.
+
+   **Taula 1: JugadorDia (3FN):**  
+
+   | _Jugador | _Dia     | MàximaPuntuació |
+   |-------------|-------------|-----------------|
+   | Zoom        | 1/9/2016    | 24K            |
+   | Zoom        | 2/9/2016    | 23K            |
+   | Creep       | 1/9/2016    | 45K            |
+   | Creep       | 2/9/2016    | 13K            |
+   | Nation      | 2/9/2016    | 78K            |
+   | Smoker      | 2/9/2016    | 67K            |
+
+   **Taula 2: Jugadors (2FN):**  
+
+   |_Jugador| Country      |
+   |-|------------------|
+   |Zoom| Cat              |
+   |Creep| Italy            |
+   |Nation| Algery           |
+   |Smoker| Saudi Arabia     |
+
+
+   **Taula 3: Countries (3FN):**  
+
+   | _Country      | Continent |
+   |------------------|-----------|
+   | Cat              | Europe    |
+   | Italy            | Europe    |
+   | Algery           | Africa    |
+   | Saudi Arabia     | Asia      |
 
 ---
 
