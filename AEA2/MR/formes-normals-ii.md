@@ -45,7 +45,6 @@ Relacions després de la normalització:
 |---------|------------|------|
 | Pere    | 1          | 8    |
 | Pere    | 2          | 7    |
-| Pere    | 1          | 5    |
 | Marta   | 1          | 8    |
 
 **Alumnes:**  
