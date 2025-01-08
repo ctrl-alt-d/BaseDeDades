@@ -64,19 +64,19 @@ La taula no està en 3NF perquè hi ha dependències transitives: per exemple, l
 
 1. **Taula d'Estudiants**:
 
-| **_Estudiant_ID** | **Nom_Estudiant** | **_Població_ID** |
+| **_Estudiant_ID** | **Nom_Estudiant** | **Nom_Població** |
 |--------------------|-------------------|------------------|
-| 1                  | Maria Pérez       | 201              |
-| 2                  | Joan Ruiz         | 202              |
-| 3                  | Anna Soler        | 203              |
+| 1                  | Maria Pérez       | Barcelona              |
+| 2                  | Joan Ruiz         | Tarragona              |
+| 3                  | Anna Soler        | Sabadell              |
 
 2. **Taula de Poblacions**:
 
-| **_Població_ID** | **Nom_Població** | **Comarca**          |
-|------------------|------------------|----------------------|
-| 201              | Barcelona        | Barcelonès           |
-| 202              | Tarragona        | Tarragonès           |
-| 203              | Sabadell         | Vallès Occidental    |
+| **_Nom_Població** | **Comarca**          |
+|------------------|----------------------|
+| Barcelona        | Barcelonès           |
+| Tarragona        | Tarragonès           |
+| Sabadell         | Vallès Occidental    |
 
 3. **Taula de Matriculacions**:
 
