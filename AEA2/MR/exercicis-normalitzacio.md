@@ -100,14 +100,14 @@ La taula no està en 3NF perquè hi ha dependències transitives: per exemple, l
 ---
 
 
-### **Exercici 1: Normalització d'una taula de clients i comandes**
-Imagina que tens la següent taula no normalitzada, que conté informació sobre clients i les seves comandes:
+### **Exercici 1: Normalització d'una taula de clients i material arrendat**
+Imagina que tens la següent taula no normalitzada, que conté informació sobre clients i el material que ens té llogat en aquest moment:
 
 | **_Client_ID** | **Nom**     | **Adreça**       | **Comandes**                 |
 |----------------|-------------|------------------|------------------------------|
-| 1              | Maria Pérez | Carrer A, 123    | Llibre, 2; Bolígrafs, 5      |
-| 2              | Joan Ruiz   | Carrer B, 456    | Llibreta, 3                  |
-| 3              | Anna Soler  | Carrer C, 789    | Llapis, 10; Esborrador, 1    |
+| 1              | Maria Pérez | Carrer A, 123    | Neveres XL, 2; Microones, 5      |
+| 2              | Joan Ruiz   | Carrer B, 456    | Nevera XXL, 3                  |
+| 3              | Anna Soler  | Carrer C, 789    | Microones, 10; Nevera SM, 1    |
 
 **Preguntes**:
 1. Identifica per què aquesta taula no compleix la 1NF.
