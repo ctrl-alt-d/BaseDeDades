@@ -147,7 +147,7 @@ Observa la següent taula no normalitzada:
 ### **Exercici 4: Normalització d'una taula de cursos i professors**
 Observa la següent taula:
 
-| **_Curs_ID** | **_Professor_ID** | **Nom_Curs**   | **Duració**  | **Nom_Professor** | **Especialitat**    |
+| **_Curs_ID** | **_Professor_ID** | **Nom_Curs**   | **Duració**  | **Nom_Professor** | **Especialitat del professor**    |
 |--------------|-------------------|----------------|--------------|--------------------|---------------------|
 | 1            | 201               | Matemàtiques   | 40 hores     | Anna Martí         | Matemàtiques        |
 | 2            | 202               | Física         | 30 hores     | Joan López         | Física              |
@@ -160,15 +160,16 @@ Observa la següent taula:
 ### **Exercici 5: Normalització d'una taula de projectes**
 Observa la següent taula:
 
-| **_Projecte_ID** | **Nom_Projecte** | **_Empleat_ID** | **Nom_Empleat** | **Càrrec**       | **Departament** |
-|-------------------|------------------|-----------------|-----------------|------------------|-----------------|
-| 1                 | Alpha           | 101             | Laura Martí     | Enginyera        | R+D             |
-| 2                 | Beta            | 102             | Joan López      | Analista         | IT              |
-| 3                 | Gamma           | 101             | Laura Martí     | Enginyera        | R+D             |
+| **_Projecte_ID** | **Nom_Projecte** | **_Empleat_ID** | **Nom_Empleat** | **Càrrec**       | **Departament** | **Cap departament** |
+|-------------------|------------------|-----------------|-----------------|------------------|-----------------|----|
+| 1                 | Alpha           | 101             | Laura Martí     | Enginyera        | R+D             |  101 |
+| 2                 | Beta            | 102             | Joan López      | Analista         | IT              |  108 |
+| 3                 | Gamma           | 101             | Laura Martí     | Enginyera        | R+D             |  101 |
 
 **Preguntes**:
 1. Identifica les dependències transitives i explica per què aquesta taula no compleix la 3NF.
-2. Divideix la taula en les seves parts normalitzades per complir la 3NF. Defineix les claus primàries i estrangeres i descriu les relacions entre les noves taules.
+2. Recorda que abans d'estar en 3FN ha d'estar en 2FN (i 1FN)
+3. Divideix la taula en les seves parts normalitzades per complir la 3NF. Defineix les claus primàries i estrangeres i descriu les relacions entre les noves taules.
 
 
 ---
@@ -176,15 +177,16 @@ Observa la següent taula:
 ### **Exercici 6: Normalització d'una taula de vendes**
 Observa la següent taula no normalitzada:
 
-| **_Venda_ID** | **_Producte_ID** | **Nom_Producte** | **Categoria** | **Preu** | **Quantitat_Venuda** | **Import_Total** |
-|---------------|------------------|------------------|---------------|----------|----------------------|------------------|
-| 1             | 101              | Bolígrafs        | Papereria     | 1.50 €   | 10                   | 15.00 €          |
-| 2             | 102              | Llibreta         | Papereria     | 2.00 €   | 5                    | 10.00 €          |
-| 3             | 101              | Bolígrafs        | Papereria     | 1.50 €   | 20                   | 30.00 €          |
+| **_Venda_ID** | **_Producte_ID** | **Nom_Producte** | **Categoria** | **Preu** | **Quantitat_Venuda** | **Import_Total** | **Descripció Categoria** |
+|---------------|------------------|------------------|---------------|----------|----------------------|------------------|-----------------|
+| 1             | 101              | Bolígrafs        | Papereria     | 1.50 €   | 10                   | 15.00 €          |  Material de parpereria |
+| 2             | 102              | Llibreta         | Papereria     | 2.00 €   | 5                    | 10.00 €          |  Material de parpereria |
+| 3             | 101              | Bolígrafs        | Papereria     | 1.50 €   | 20                   | 30.00 €          |  Material de parpereria |
 
 **Preguntes**:
 1. Per què aquesta taula no compleix la 3NF? Indica les dependències transitives existents.
-2. Normalitza la taula perquè compleixi la 3NF i descriu les relacions entre les noves taules.
+2. Recorda que abans d'estar en 3FN ha d'estar en 2FN (i 1FN)
+3. Normalitza la taula perquè compleixi la 3NF i descriu les relacions entre les noves taules.
 
 
 ### **Exercici 7: Normalització d'una taula de clients i comptes bancaris**
@@ -199,5 +201,7 @@ La següent taula conté informació sobre clients i els seus comptes bancaris. 
 **Tasques**:
 
 Passar a 3a forma normal. Per les FN 1, 2 i 3 explicar si les compleix o no i per què, com es fa per tal que compleixi i normalitzar.
+
+Nota: En aquest exercici, el `_NIF_Client` està marcat com clau primària. Tanmateix, quan passem a primera forma normal, ens trobarem que el nif ja no serà clau primària, que ara la clau primària serà el `codi_compte_bancari`.
 
 
