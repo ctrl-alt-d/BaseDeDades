@@ -12,22 +12,22 @@
 |-----------------------------|-------|--------------------------|
 | [AEA1 - Introducció a les BD](./AEA1)  | 8     | R1                       |
 | [AEA2 - El model entitat relació i el model relacional](./AEA2) | 40   | R6                   |
-| AEA5 - DDL                  | 19    | R2                   |
-| AEA4 - DML                  | 35    | R3, R4               |
-| AEA6 - DCL i extensió procedimental | 20 | R5                |
-| AEE7 - BD NoSQL             | 10    | R7                   |
+| [AEA3 - DDL](./AEA3)                  | 19    | R2                   |
+| [AEA4 - DML](./AEA4)                  | 35    | R3, R4               |
+| [AEA5 - DCL i extensió procedimental](./AEA5) | 20 | R5                |
+| AEE6 - BD NoSQL             | 10    | R7                   |
 
 Nota:
 
 ```math
-QM = 0.7 \cdot (0.1 \cdot RA_1 +  0.1 \cdot RA_2 + 0.2 \cdot RA_3 + 0.1 \cdot RA_4 + 0.2 \cdot RA_5 + 0.2 \cdot RA_6 + 0.1 \cdot RA_7) + 0.2 \cdot CC + 0.1 \cdot EE
+QM = 0.7 \cdot (0.1 \cdot RA_1 +  0.2 \cdot RA_2 + 0.2 \cdot RA_3 + 0.2 \cdot RA_4 + 0.2 \cdot RA_5 + 0.1 \cdot RA_6) + 0.2 \cdot CC + 0.1 \cdot EE
 ```
 
 ## Temporització
 
-| Darrera classe | AEA1              | AEA2              | AEA5              | AEA4              | AEA6              | AEE7           |
+| Darrera classe | AEA1              | AEA2              | AEA3              | AEA4              | AEA5              | AEE6           |
 |----------------|-------------------|-------------------|-------------------|-------------------|-------------------|----------------|
-|                | 26.9.2024 15:50h | 11.12.2024 16:45h | 30.1.2025 15:50h  | 7.4.2025 15:50h   | 26.5.2025 15:50h  | Final de curs  |
+|                | 26.9.2024 | 11.12.2024  | 6.2.2025   | 11.3.2025    | 29.4.2025   | 15.5.2025       |
 
 
 

@@ -1,2 +1,3 @@
 # DDL - Data Definition Language
 
+Aprendran DDM, crear taules, modificar l'estructura de les taules. Declarar restriccions de clau forana: cascada, restrict, default, ...
