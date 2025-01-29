@@ -2,13 +2,18 @@
 
 Aprendran DML. 
 
+* Inserció de dades
 * Consultes
    * Seleccions, projeccions, joins (inner, outer full, right i left, where, order by, having, group by)
 * Actualitzacions
 * Esborrat (delete, truncate)
 
+## Material inicial de suport
 
-Farem els exercicis a partir de les següents taules:
+
+### Preparar l'entorn d'aprenentatge
+
+Instruccions als alumnes: Crea una base de dades nova anomenada Facturació. Farem els exercicis a partir de les següents taules, crea les taules a la teva base de dades:
 
 ```sql
 CREATE TABLE Categories (
@@ -59,7 +64,30 @@ CREATE TABLE LiniesDeFactura (
 );
 ```
 
-Amb les següents dades:
+### Aprenent Inserts
+
+La comanda INSERT permet afegir dades a una taula. La sintaxi és la següent:
+
+```sql
+INSERT INTO nom_taula (columna1, columna2, columna3, ...)
+VALUES (valor1, valor2, valor3, ...);
+```
+
+Hi ha SGBDR (Sistemes Gestors de Bases de Dades Relacionals) que permeten inserir més d'una fila en una sola comanda INSERT. La sintaxi és la següent:
+
+```sql
+INSERT INTO nom_taula (columna1, columna2, columna3, ...)
+VALUES (valor1, valor2, valor3, ...),
+       (valor1, valor2, valor3, ...),
+       (valor1, valor2, valor3, ...),
+       ...
+       (valor1, valor2, valor3, ...);
+```
+
+Més informació: https://learn.microsoft.com/en-us/sql/t-sql/statements/insert-transact-sql?view=sql-server-ver16
+
+Ara anem a insertar dades a les taules creades anteriorment:
+
 
 ```sql
 -- Inserció de dades a la taula Categories
@@ -102,7 +130,25 @@ INSERT INTO LiniesDeFactura (Exercici, Numero_Factura, Numero_Linia, Producte_Co
 ```
 
 
-Consultes senzilles:
+### Aprenent Consultes Select
+
+Per seleccionar dades fem servir la comanda SELECT. La sintaxi és la següent:
+
+```sql
+SELECT columna1, columna2, columna3, ...
+FROM nom_taula;
+```
+
+Si volem seleccionar totes les columnes farem servir l'asterisc:
+
+```sql
+SELECT *
+FROM nom_taula;
+```
+
+Més informació: https://learn.microsoft.com/en-us/sql/t-sql/queries/select-transact-sql?view=sql-server-ver16
+
+Anem a practicar amb unes consultes senzilles:
 
 ```sql
 /* Consulta 1: Recupera totes les categories disponibles */
@@ -118,8 +164,34 @@ SELECT * FROM Clients;
 SELECT * FROM Productes;
 ```
 
+Fes tu ara els següents exercicis:
 
-Introduim order by:
+* Selecció de totes les dades de les factures emeses
+* Selecció el codi i la data de les factures emeses
+* Selecció de totes les dades de totes les línies de factura
+
+
+### Introduïm order by:
+
+Si volem les dades en ordre farem servir la clàusula ORDER BY. La sintaxi és la següent:
+
+```sql
+SELECT columna1, columna2, columna3, ...
+FROM nom_taula
+ORDER BY columna7, columna2, columna3, ...;
+```
+
+Si volem ordre descendent farem:
+
+```sql
+SELECT columna1, columna2, columna3, ...
+FROM nom_taula
+ORDER BY columna2 DESC, columna5 DESC, columna7 DESC;
+```
+
+>Les columnes que apareixen a l' `order by` no tenen perquè aparèixer a la llista de selecció.
+
+Anem a practicar amb unes consultes senzilles:
 
 ```sql
 /* Consulta 1: Ordenar les categories per nom en ordre alfabètic */
@@ -135,7 +207,38 @@ SELECT * FROM Productes
 ORDER BY Preu_Actual;
 ```
 
-Introduim where:
+Fes tu ara els següents exercicis:
+* Ordenar les factures per data
+* Ordenar les línies de factura per quantitat
+* Ordenar les línies de factura per preu de venda en ordre descendent
+
+### Introduïm where:
+
+Si volem filtrar les dades farem servir la clàusula WHERE. La sintaxi és la següent:
+
+```sql
+SELECT columna1, columna2, columna3, ...
+FROM nom_taula
+WHERE condicio;
+```
+
+Exemples de condicions:
+
+* Igualtat: `columna = valor`
+* Diferent: `columna <> valor` o bé `columna != valor`
+* Major que: `columna > valor`
+* Major o igual que: `columna >= valor`
+* Menor que: `columna < valor`
+* Menor o igual que: `columna <= valor`
+* Comença per: `columna LIKE 'valor%'`
+* Conté: `columna LIKE '%valor%'`
+* Està entre: `columna BETWEEN valor1 AND valor2`
+* És nul: `columna IS NULL`
+* No és nul: `columna IS NOT NULL`
+* En una llista: `columna IN (valor1, valor2, ...)`
+* No en una llista: `columna NOT IN (valor1, valor2, ...)`
+
+
 
 ```sql
 /* Consulta 1: Recupera la informació del client amb codi 'CL02' */
@@ -151,43 +254,101 @@ SELECT * FROM Productes
 WHERE Preu_Actual > 50;
 ```
 
-Introduim joins:
+Exercicis:
+
+* Recupera la informació de les factures emeses l'any 2025
+* Mostra les línies de factura amb quantitat superior a 2
+* Recupera els clients amb nom que continguin dues `n` al seu nom
+
+### Introduim inner joins:
+
+El join serveix per combinar dades de dues taules. La sintaxi és la següent:
+
+```sql
+SELECT taula1.columna1, taula1,columna2, taula2.columna1, ...
+FROM taula1
+INNER JOIN taula2 ON taula1.columna = taula2.columna;
+```
+
+Es poden combinar més de dues taules:
+
+```sql
+SELECT taula1.columna1, taula2.columna1, taula3.columna1, ...
+FROM taula1
+INNER JOIN taula2 ON taula1.columna = taula2.columna
+INNER JOIN taula3 ON taula2.columna = taula3.columna;
+```
+
+Podem posar alias a les taules per si el seu nom és molt llarg o per si volem fer join dues vegades contra la mateixa taula:
+
+```sql
+SELECT t1.columna1, t2.columna1, t3.columna1, ...
+FROM taula1 t1
+INNER JOIN taula2 t2 ON t1.columna = t2.columna
+INNER JOIN taula2 t3 ON t2.columna = t3.columna;
+```
+
+Exemples:
+
 
 ```sql
 /* Consulta 1: Recupera la informació de les factures emeses pels clients */
 /* Mostra l'exercici, número de factura, codi del client, data, nom del client i telèfon */
 SELECT Factures.Exercici, Factures.Numero, Factures.Client_Codi, Factures.Data, Clients.Nom, Clients.Telefon
 FROM Factures
-JOIN Clients ON Factures.Client_Codi = Clients.Codi;
+INNER JOIN Clients ON Factures.Client_Codi = Clients.Codi;
 
 /* La mateixa consulta usant alias de taules */
 SELECT F.Exercici, F.Numero, F.Client_Codi, F.Data, C.Nom, C.Telefon
 FROM Factures F
-JOIN Clients C ON F.Client_Codi = C.Codi;
+INNER JOIN Clients C ON F.Client_Codi = C.Codi;
 
 /* Consulta 2: Recupera la informació de les línies de factura amb el nom del producte usant alias*/
 /* Mostra l'exercici, número de factura, número de línia, codi del producte, quantitat, preu de venda, descompte i nom del producte */
 SELECT LF.Exercici, LF.Numero_Factura, LF.Numero_Linia, LF.Producte_Codi, LF.Quantitat, LF.Preu_Venda, LF.Descompte, P.Nom
 FROM LiniesDeFactura LF
-JOIN Productes P ON LF.Producte_Codi = P.Codi;
+INNER JOIN Productes P ON LF.Producte_Codi = P.Codi;
 ```
 
-Introduim joins amb where:
+### Combinem joins amb where:
+
 
 ```sql
 /* Consulta 1: Recupera la informació de les línies de factura amb el nom del producte per a una factura específica */
 /* Mostra l'exercici, número de factura, número de línia, codi del producte, quantitat, preu de venda, descompte i nom del producte */
 SELECT LF.Exercici, LF.Numero_Factura, LF.Numero_Linia, LF.Producte_Codi, LF.Quantitat, LF.Preu_Venda, LF.Descompte, P.Nom
 FROM LiniesDeFactura LF
-JOIN Productes P ON LF.Producte_Codi = P.Codi
+INNER JOIN Productes P ON LF.Producte_Codi = P.Codi
 WHERE LF.Exercici = 2025 AND LF.Numero_Factura = 1;
 
 /* Consulta 2: Recupera la informació de les factures emeses pels clients amb nom que comença per 'M' */
 /* Mostra l'exercici, número de factura, codi del client, data, nom del client i telèfon */
 SELECT F.Exercici, F.Numero, F.Client_Codi, F.Data, C.Nom, C.Telefon
 FROM Factures F
-JOIN Clients C ON F.Client_Codi = C.Codi
+INNER JOIN Clients C ON F.Client_Codi = C.Codi
 WHERE C.Nom LIKE 'M%';
 ```
 
+Exercicis:
 
+* Recupera la informació de les línies de factura amb el nom del producte per a una factura específica.
+* Recupera la informació de les factures emeses pels clients amb nom que comença per 'A'.
+* Recupera la informació de les línies de factura amb el nom del producte per a una factura emesa per un client amb nom que comença per 'J'. Hauràs de fer servir dos joins.
+
+# TODO
+
+A partir d'aquí es pot explicar:
+* Expresions aritmètiques (exemple: multiplicar preu per quantitat per obtenir el total)
+* Funcions (ex: data, string, cast, ...)
+* outer joins (left, right, full)
+* cross join
+* group by (i funcions d'agregació)
+* having
+* subqueries
+* union i union all
+* intersect
+* except
+* select distinct
+* inserts des de select
+* updates
+* deletes
