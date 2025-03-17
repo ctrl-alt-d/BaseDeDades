@@ -1,10 +1,16 @@
 # DDL - Data Definition Language
 
+## BD
+
+```bash
+docker run -e "ACCEPT_EULA=Y" -e "MSSQL_SA_PASSWORD=@DAW2025" -p 1433:1433 --name sql1 --hostname sql1 -d mcr.microsoft.com/mssql/server:2022-latest
+```
+
+## Esquema
+
 Aprendran DDM, crear taules, modificar l'estructura de les taules. Declarar restriccions de clau forana: cascada, restrict, default, ...
 
 Observa aquestes taules i fes el MCD per comprovar que entens l'estructura:
-
-```sql
 
 ```sql
 CREATE TABLE Categories (
