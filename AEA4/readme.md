@@ -12,5 +12,6 @@ Aprendran DML.
 
 * [Exercicis SQL 1](exercicis_sql1.md)
 * [Exercicis SQL 2](exercicis_sql2.md)
+* [Exercicis SQL 3](exercicis_sql3.md)
 
 
