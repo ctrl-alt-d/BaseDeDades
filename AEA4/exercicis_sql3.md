@@ -42,23 +42,18 @@ INSERT INTO Color (r, g, b, nom) VALUES (210, 105, 30, 'Xocolata');
 INSERT INTO Color (r, g, b, nom) VALUES (250, 128, 114, 'Salmó');
 ```
 
-### Realitza la següent consulta
+### Consulta Barreja de Colors
 
-* Realitza una consulta que generi codi html. El resultat que volem, per a cada filera, seria com el següent:
+Fes una consulta que retorni la barreja de tots els colors contra tots (exceptuant ell mateix)
 
-```html
-<div>
-    Quan barregem el color <span style="color: rgb(255,0,0)";>Vermell</span>
-    amb el color <span style="color: rgb(0,255,0)";>Verd</span>
-    obenim <span style="color: rgb(128,128,0)">aquest color</span>
-</div>
-```
+| Color 1 | Codi | Color 2 | Codi | Barreja |
+|---------|---------|---------|---------|---------|
+| Vermell | REG(255,0,0) | Verd | RGB(0,255,0)    | RGB(128, 128, 0)
 
-Fixa't que el color resultant s'obtè de fer la mitjana de cadascú dels components dels colors que barregem.
 
-Pots fer copy-paste de les fileres resultants en una pàgina web per veure com queda.
+Fixa't que el color resultant s'obtè de fer la mitjana de cadascú dels tres components dels dos colors que barregem.
 
-En T-SQL (SQL Server), pots fer servir les següents funcions per a ajudar-te:
+En T-SQL (SQL Server), pots fer servir les següents funcions per a ajudar-te amb la sentència SQL:
 * Concatenar cadenes: `CONCAT()` o loperador `+`
 * Convertir enters a cadena sense espais innecessaris: `CAST(valor AS VARCHAR)` o `CONVERT(VARCHAR, valor)`
 
@@ -72,6 +67,22 @@ Ex:
 SELECT CONCAT('RGB(', r, ',', g, ',', b, ')') FROM Color WHERE nom = 'Vermell';
 -- Resultat: "RGB(255,0,0)"
 ```
+
+# Barreja HTML
+
+
+* Realitza una consulta que generi codi html. El resultat que volem, per a cada filera, seria com el següent:
+
+```html
+<div>
+    Quan barregem el color <span style="color: rgb(255,0,0)";>Vermell</span>
+    amb el color <span style="color: rgb(0,255,0)";>Verd</span>
+    obenim <span style="color: rgb(128,128,0)">aquest color</span>
+</div>
+```
+
+Pots fer copy-paste de les fileres resultants en una pàgina web per veure com queda.
+
 
 # Bonus track
 
