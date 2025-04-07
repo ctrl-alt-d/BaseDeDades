@@ -8,6 +8,8 @@
 ## TX
 
 * [Exercici 1](./exercici_tx.md)
+* [Exercici 2](./exercici_store.md)
+* [Exercici 3](./exercici_store2.md)
 
 # Permisos
 
