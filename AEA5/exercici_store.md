@@ -22,6 +22,7 @@ BEGIN
 
     BEGIN TRY
         BEGIN TRANSACTION;
+        SET TRANSACTION ISOLATION LEVEL REPEATABLE READ;
 
         -- Comprovem l’estoc actual del producte
         DECLARE @stock_actual INT;
