@@ -13,7 +13,7 @@ Aquest procediment gestionarà tot el procés de votació, assegurant integritat
 
 - `usuari(id, nom)`
 - `enquestes(id, text, opcio_mes_votada_id, data_max_votar)`
-- `opcions(id, enquesta_opcio, text)`
+- `opcions(id, enquesta_id, text)`
 - `vots(usuari_id, opcio_id)`
 
 
