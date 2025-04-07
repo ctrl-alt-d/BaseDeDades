@@ -11,7 +11,7 @@ Aquest procediment gestionarà tot el procés de votació, assegurant integritat
 ## Estructura de taules (documentada)
 
 
-- `usuari(id, nom)`
+- `usuaris(id, nom)`
 - `enquestes(id, text, opcio_mes_votada_id, data_max_votar)`
 - `opcions(id, enquesta_id, text)`
 - `vots(usuari_id, opcio_id)`
