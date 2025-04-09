@@ -7,9 +7,10 @@
 
 ## TX
 
-* [Exercici 1](./exercici_tx.md)
-* [Exercici 2](./exercici_store.md)
-* [Exercici 3](./exercici_store2.md)
+* [Exercici 1, Transaccions](./exercici_tx.md)
+* [Exercici 2, Store Comandes](./exercici_store.md)
+* [Exercici 3, Store Votacions](./exercici_store2.md)
+* [Exercici 4, C# vs Procediment](./exercici_chasp_vs_store.md)
 
 # Permisos
 
