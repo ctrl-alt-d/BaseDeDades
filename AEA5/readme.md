@@ -12,6 +12,10 @@
 * [Exercici 3, Store Votacions](./exercici_store2.md)
 * [Exercici 4, C# vs Procediment](./exercici_chasp_vs_store.md)
 
+## Exercici de repàs
+
+* [Reserva veterinari](./repas_tx.md)
+
 # Permisos
 
 * https://learn.microsoft.com/en-us/sql/relational-databases/security/authentication-access/database-level-roles?view=sql-server-ver16
